@@ -55,6 +55,11 @@ def main():
     lista.insertar(1,2)
     lista.insertar(3,4)
     lista.insertar(5,6)
+    lista.insertar(7,8)
+    lista.insertar(9,10)
+    lista.eliminar(1,2)
+    lista.eliminar(5,6)
+    lista.eliminar(9,10)
     lista.mostrar()
 # %%
 if __name__ == '__main__':
