@@ -38,7 +38,17 @@ class LSL:
 
     # Aca se va a eliminar un nodo
     def eliminar(self, valor1, valor2):
-        pass
+        nodo_actual = self.inicio
+        if nodo_actual:
+            if nodo_actual.dato1 == valor1 and nodo_actual.dato2 == valor2:
+                self.inicio = nodo_actual.siguente
+                return
+            while nodo_actual.siguente:
+                if nodo_actual.siguente.dato1 == valor1 and nodo_actual.siguente.dato2 == valor2:
+                    nodo_actual.siguente = nodo_actual.siguente.siguente
+                    return
+                nodo_actual = nodo_actual.siguente
+
 # %%
 def main():
     lista = LSL()
@@ -46,7 +56,6 @@ def main():
     lista.insertar(3,4)
     lista.insertar(5,6)
     lista.mostrar()
-# %% <-- What this? es una funci[on que se asegura que todo se haya
-# inicializado antes de empezar el programa
+# %%
 if __name__ == '__main__':
     main()
