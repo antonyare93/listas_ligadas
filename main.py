@@ -38,7 +38,7 @@ class LSL:
 
     # Aca se va a eliminar un nodo
     def eliminar(self, valor1, valor2):
-        
+        pass
 # %%
 def main():
     lista = LSL()
